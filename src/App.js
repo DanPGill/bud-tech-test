@@ -6,7 +6,7 @@ import Transactions from './containers/transactions'
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
       <Provider store={store}>
         <Transactions />
       </Provider>

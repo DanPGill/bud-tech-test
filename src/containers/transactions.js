@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import _ from 'lodash'
 import { getTransactions } from '../redux/actions/transactions'
 import connect from '../common/reduxConnect'
-import getTenLowestExpenses from '../common/getTenLowestExpenses'
+import { getTenLowestExpenses } from '../common/expenses'
 import Transaction from '../components/transaction'
 
 class Transactions extends Component {
