@@ -6,17 +6,17 @@ import { getTenLowestExpenses } from '../common/expenses'
 import Transaction from '../components/transaction'
 
 class Transactions extends Component {
-  componentWillMount(){
+  componentWillMount() {
     this.props.dispatch(getTransactions())
   }
   render() {
-  	const tenLowestTransactions = getTenLowestExpenses(this.props.transactions.transactions)
+    const tenLowestTransactions = getTenLowestExpenses(this.props.transactions.transactions)
     return (
-    	<div>
-    	{_.map(tenLowestTransactions, transaction => {
-    		return <Transaction transaction={transaction} key={transaction.id}/>
-    	})}
-    	</div>
+      <div>
+        {_.map(tenLowestTransactions, transaction => {
+          return <Transaction transaction={transaction} key={transaction.id} />
+        })}
+      </div>
     )
   }
 }

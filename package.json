@@ -7,6 +7,7 @@
     "esm": "^3.2.5",
     "lodash": "^4.17.11",
     "mocha": "^6.0.0",
+    "prettier": "^1.16.4",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-redux": "^4.0.4",
@@ -19,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "mocha -r esm",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format:js": "npm run prettier -- \"src/**/*.js\"",
+    "prettier": "prettier --single-quote --trailing-comma all --no-semi --print-width 180 --write"
   },
   "eslintConfig": {
     "extends": "react-app"
