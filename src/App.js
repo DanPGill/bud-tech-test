@@ -7,12 +7,12 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Provider store={store}>
-        <Transactions />
-      </Provider>
+        <Provider store={store}>
+          <Transactions />
+        </Provider>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
